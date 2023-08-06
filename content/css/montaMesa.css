@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body #jogo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #jogo #mesa {
+  background-color: darkgreen;
+  width: 1000px;
+  height: 500px;
+  padding: 10px;
+}
+body #jogo #mesa #jogadores {
+  background-color: darkolivegreen;
+  display: flex;
+  justify-content: space-between;
+}
+body #jogo #mesa #jogadores .jogador {
+  border: 4px solid green;
+  margin: 4px 8px;
+  width: 220px;
+  height: 200px;
+  background-color: forestgreen;
+}
+body #jogo #mesa #jogadores .jogador .nomeJogador {
+  color: white;
+}
+body #jogo #mesa #jogadores .jogador .cartas {
+  display: flex;
+  justify-content: center;
+}
+body #jogo #mesa #jogadores .jogador .cartas .carta {
+  width: 40px;
+  height: 60px;
+  margin: 2px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #jogo #mesa #jogadores .jogador .montante {
+  color: yellow;
+}
