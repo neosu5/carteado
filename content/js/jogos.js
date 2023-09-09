@@ -1,10 +1,12 @@
 const poquer = (() => {
     let cartasDescartadas = [];
     
+    iniciaRodada();
 
     function iniciaRodada() {
         let mesaPoquer = mesa();
 
+        cartasDescartadas = [];
         mesaPoquer.montarBaralho(1, ["JOKER"]);
         mesaPoquer.criarJogadores(4);
         mesaPoquer.embaralharCartas(mesaPoquer.verificarBaralho());

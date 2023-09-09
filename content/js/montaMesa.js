@@ -48,6 +48,22 @@ const mesa = (() => {
                 jogador.cartas.push(retirarCartaBaralho());
             }
         });
+
+        let boxJogadores = '';
+        jogadores.map((jogador, index) => {
+            boxJogadores += `<div class="jogador">
+            <h4 class="nomeJogador">Jogador - ${index}</h4>
+            <div class="cartas">
+                <div class="carta">${jogador.cartas[0]}</div>
+                <div class="carta">${jogador.cartas[1]}</div>
+            </div>
+            <div class="montante">
+                <p class="total"><b>Total:</b> 400</p>
+                <p class="aposta"><b>Aposta:</b> 5</p>
+            </div>
+        </div>`;
+        });
+        $('#jogadores').html(boxJogadores);
     }
 
     function retirarCartaBaralho() {

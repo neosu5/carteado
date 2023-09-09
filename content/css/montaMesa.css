@@ -40,7 +40,7 @@ body #jogo #mesa #jogadores .jogador .cartas {
   justify-content: center;
 }
 body #jogo #mesa #jogadores .jogador .cartas .carta {
-  width: 40px;
+  width: 44px;
   height: 60px;
   margin: 2px;
   background-color: white;
