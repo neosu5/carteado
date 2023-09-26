@@ -19,6 +19,7 @@ body #jogo #mesa {
   width: 1000px;
   height: 500px;
   padding: 10px;
+  position: relative;
 }
 body #jogo #mesa #jogadores {
   background-color: darkolivegreen;
@@ -52,4 +53,60 @@ body #jogo #mesa #jogadores .jogador .cartas .carta {
 }
 body #jogo #mesa #jogadores .jogador .montante {
   color: yellow;
+}
+body #jogo #mesa #cartasBaralho {
+  width: 44px;
+  height: 60px;
+  margin: 2px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+body #jogo #mesa #cartasMesa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+body #jogo #mesa #cartasMesa #boxMesa {
+  width: auto;
+  display: inherit;
+  align-items: center;
+  flex-direction: column;
+}
+body #jogo #mesa #cartasMesa #boxMesa .cartas {
+  display: flex;
+  justify-content: center;
+}
+body #jogo #mesa #cartasMesa #boxMesa .cartas .carta {
+  width: 44px;
+  height: 60px;
+  margin: 2px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #jogo #mesa #cartasDescartadas {
+  width: 44px;
+  height: 60px;
+  margin: 2px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
